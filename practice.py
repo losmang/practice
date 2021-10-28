@@ -1,3 +1,3 @@
-name = input("Enter your awesome fucking name here: ")
+name = input("Enter your gosh darn Awesome name here: ")
 
 print("Hello",name)
