@@ -1,3 +1,3 @@
-name = input("Enter your Awesome name here: ")
+name = int(input("Enter a number here: "))
 
-print("Hello",name)
+print("You chose:",name)
