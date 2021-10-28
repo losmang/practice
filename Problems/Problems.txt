@@ -1,0 +1,12 @@
+Problem 1:
+# Problem: Recieve miles and convert to kilometers
+# kilometers = miles * 1.60934
+# Enter Miles 5
+# 5 Miles = 8.04 kilometers
+
+Problem 2:
+#if age is 5 go to kindergarten
+# ages 6 - 17 go though grades 1 - 12
+# if greater than 17 go to college
+# try and complete with 10 lines
+# try and complete with 10 lines
