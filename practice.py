@@ -1,8 +1,8 @@
-treeRows = int(input("How may rows does your tree have? "))
+treeRows = int(input("How many rows does your tree have: "))
 
 spaces = treeRows - 1
 hashes = 1
-stump = treeRows - 1
+stump = treeRows -1
 
 while treeRows != 0:
     for i in range(spaces):
