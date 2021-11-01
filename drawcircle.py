@@ -15,4 +15,10 @@ def draw_circle_turtle(x ,y , r):
         turtle.setpos(x + r *math.cos(a), y + r *math.sin(a))
 
     draw_circle_turtle(100 , 100 , 50)
-    turtle.mainloop() 
+    turtle.mainloop()
+
+
+# class draws a spirographic
+class Spiro
+    # constructor
+    def __init__(self, xc)
