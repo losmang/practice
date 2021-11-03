@@ -1,21 +1,18 @@
-treeRows = int(input("How many rows does your tree have: "))
+import random
 
-spaces = treeRows - 1
-hashes = 1
-stump = treeRows -1
+number = random.randrange(1 , 100)
+count = 0
 
-while treeRows != 0:
-    for i in range(spaces):
-        print(' ' , end = '')
-    for i in range(hashes):
-        print('#' , end = '')
-    print()
+while True:
+    try:
+        guess = int(input("Guess a number between 1 and 100: "))
+        count += 1
 
-    spaces -= 1
-    hashes += 2
-    treeRows -= 1
-
-for i in range(stump):
-    print(' ' , end = '')
-
-print('#')
+        if guess == number:
+            print("You\'ve guessed the number...woo hoo! It only took {} tries".format(count))
+        elif guess > number:
+            print("Too High")
+        else:
+            print("Too Low")
+    except ValueError:
+        print("You didn\'t enter a number you silly butt!")

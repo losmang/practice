@@ -1,14 +1,19 @@
 import random
 
-number = random.randrange(1,10)
+number = random.randrange(1 , 100)
 count = 0
+
 while True:
-    guess = int(input("Guess a number between 1 and 10: "))
-    count += 1
-    if guess == number:
-        print("You\'ve guessed it!! I took {} tries to get the answer!".format(count))
-        break
-    elif guess < number:
-        print("Too low")
-    else:
-        print("Too high")
+    try:
+        guess = int(input("Guess a number between 1 and 100: "))
+        count += 1
+
+        if guess == number:
+            print("You\'ve guessed a number! it only took {} tries!".format(count))
+            break
+        elif guess > number:
+            print("Too high")
+        else:
+            print("Too Low")
+    except ValueError:
+        print("You didn\'t enter a number")
